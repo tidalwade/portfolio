@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from "react";
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
@@ -10,13 +10,43 @@ import TileSlide from './TileSlide'
 
 function App() {
 
-  const [tile, setTile] = useState(tiles)
+  const tiles = [
+    {
+        content: 'Host a virtual birthday bash',
+        linkText: 'Get Started',
+        tileClass: 'greeting-tile-one'
+    },
+    {
+        content: 'Dedicate a bar or bat mitzvah',
+        linkText: 'Get Started',
+        tileClass: 'greeting-tile-two'
+    },
+    {
+        content: 'Raise funds with a Quinceañera',
+        linkText: 'Get Started',
+        tileClass: 'greeting-tile-three'
+    },
+    {
+        content: 'Request donations in lieu of weeding or anniversary gifts',
+        linkText: 'Get Started',
+        tileClass: 'greeting-tile-four'
+    },
+    {
+        content: 'Mark a health milestone',
+        linkText: 'Get Started',
+        tileClass: 'greeting-tile-five'
+    }
+  ]
 
   const renderTilesMobile = () => {
     return (
-      <>
-        <TileSlide tile={tile}/>
-      </>
+        <div>
+            {tiles.map((tile) => {
+                return (
+                    <TileSlide content={tile.content} linkText={tile.linkText}/>
+                )
+            })}
+        </div>
     )
   }
 
@@ -35,33 +65,5 @@ function App() {
     </div>
   );
 }
-
-const tiles = [
-  {
-      content: 'Host a virtual birthday bash',
-      linkText: 'Get Started',
-      tileClass: 'greeting-tile-one'
-  },
-  {
-      content: 'Dedicate a bar or bat mitzvah',
-      linkText: 'Get Started',
-      tileClass: 'greeting-tile-two'
-  },
-  {
-      content: 'Raise funds with a Quinceañera',
-      linkText: 'Get Started',
-      tileClass: 'greeting-tile-three'
-  },
-  {
-      content: 'Request donations in lieu of weeding or anniversary gifts',
-      linkText: 'Get Started',
-      tileClass: 'greeting-tile-four'
-  },
-  {
-      content: 'Mark a health milestone',
-      linkText: 'Get Started',
-      tileClass: 'greeting-tile-five'
-  }
-]
 
 export default App;
