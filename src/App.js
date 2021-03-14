@@ -5,8 +5,9 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import {Route, Link} from 'react-router-dom';
-import NavBar from './NavBar';
+import NavBar from './NavBar'
 import './css/app.css'
+const { v4: uuidv4 } = require('uuid');
 
 
 function App() {

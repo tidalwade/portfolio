@@ -1,4 +1,5 @@
 
+@import 'main.css';
 @import 'wrapper.css';
 
 *, *::before, *::after {
@@ -18,3 +19,44 @@ body {
 .mr-1 {
   margin-right: 5px;
 }
+
+.navbar {
+  z-index: 1;
+}
+
+#banner .banner__block {
+  background: #cbcbcb;
+  height: 300px;
+  z-index: -1;
+}
+
+#summary .summary__block {
+  background: gray;
+  height: 250px;
+  z-index: -1;
+}
+
+#portfolio .portfolio__block:first-of-type {
+  height: 250px;
+  z-index: -1;
+}
+
+#portfolio .row > div:last-of-type div {
+  background: #f5e4ce;
+}
+
+#portfolio .row > div:first-of-type > div {
+  background: #cedff5;
+}
+
+#portfolio .row:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+#clients .clients__block {
+  background: #cbcbcb;
+  height: 175px;
+  z-index: -1;
+}
+
+

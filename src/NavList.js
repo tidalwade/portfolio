@@ -1,4 +1,7 @@
-import React from 'react';
+import React from 'react'
+import { Link } from 'react-scroll';
+const { v4: uuidv4 } = require('uuid');
+
 
 export default function NavList(props) {
   const {
@@ -6,17 +9,17 @@ export default function NavList(props) {
       content,
       linkUrl,
       active,
-      handleOnClick
+      handleNavigation
     } = props
 
   return (
     <>
-      <li key={index}  className="nav-item" 
-        onClick={() => handleOnClick(index)}
+      <li className="nav-item" 
         className={active === index ? "active" : "unactive"}>
-        {/* <a className={`nav-link`} href={linkUrl}>{content}
-        </a> */}
-        {content}
+        <Link className={`nav-link`} activeClass="active" to={linkUrl} spy={false} smooth={true} duration={1000} 
+          onClick={() => handleNavigation(index)}>
+          {content}
+        </Link>
       </li>
     </>
   )

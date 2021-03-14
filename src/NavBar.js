@@ -1,49 +1,58 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import {Link} from 'react-router-dom';
 import NavList from './NavList'
+const { v4: uuidv4 } = require('uuid');
 
 function NavBar(){
 
       const [active, setActive] = useState(5)
+      const [isOpen, setOpen] = useState(false);
 
       const navList = [
         {
             content: 'Home',
-            linkUrl: '/',
+            linkUrl: 'banner',
         },
         {
             content: 'About',
-            linkUrl: '/about'
+            linkUrl: 'summary',
         },
         {
             content: 'Projects',
-            linkUrl: '/projects',
+            linkUrl: 'portfolio',
         },
         {
             content: 'Contact',
-            linkUrl: '/content',
+            linkUrl: 'clients',
         }
       ]
 
-    function handleOnClick(index){
+    function handleNavigation(index){
       setActive(index)
-      console.log(index)
+      setOpen(false);
     }
+
+    function handleMobileNavToggle() {
+      setOpen(!isOpen);
+    };
 
   return (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#">Navbar</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div className="container">
+  <a className="navbar-brand" href="#">Ryan Wade</a>
+  <button onClick={handleMobileNavToggle} className="navbar-toggler" type="button">
     <span className="navbar-toggler-icon"></span>
   </button>
+    <ul className={`navbar-collapse offcanvas-collapse ${isOpen ? "show" : ""}`} id="navbarSupportedContent">
 
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav mr-auto">
+    <button onClick={handleMobileNavToggle} className="navbar-toggler" type="button"><span className="navbar-toggler-icon"></span></button>
+    <ul className="navbar-nav ml-auto mr-0 no-callout">
       {navList.map((navLists, index) => {
         return (
-            <NavList {...navLists} index={index} active={active} handleOnClick={handleOnClick}/>
+            <NavList {...navLists} key={uuidv4()} index={index} active={active} handleNavigation={handleNavigation}/>
         )
       })}
+      </ul>
     </ul>
   </div>
 </nav>

@@ -10,7 +10,7 @@ export default function TilesSlide(props) {
     } = props
 
   return (
-    <div key={index} className={`greeting-tile-slide`}>
+    <div className={`greeting-tile-slide`}>
     <div className={`greeting-tile-photo ${tileClass}`}></div>
     <div className="greeting-tile-slide_content">
       <p>{content}</p>

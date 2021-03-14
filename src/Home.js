@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
 import TileSlide from './TileSlide'
+import logo from './alz_thermo.png';
+const { v4: uuidv4 } = require('uuid');
 
 function Home(){
 
@@ -36,7 +38,7 @@ function Home(){
         <div>
             {tiles.map((tile) => {
                 return (
-                    <TileSlide {...tile} />
+                    <TileSlide {...tile} key={uuidv4()} />
                 )
             })}
         </div>
@@ -44,8 +46,96 @@ function Home(){
   }
   return(
     <div>
-      <section className="section greeting-tiles-mobile is-hidden-tablet pt-5 py-0">
-        <div className="container">
+      <section className="pt-5 py-0 container" id="banner">
+        <div className="row">
+          <div className="my-2 col-12">
+          <div className="my-2 col-12 banner__block"></div>
+          </div>
+        </div>
+      </section>
+      <section className="py-3 container" id="summary">
+        <div className="row">
+          <div className="my-2 col-md-6 col-sm-12">
+            <div className="my-2 col-12 summary__block">
+              <img src={logo} />
+              {/* <img src="./alz_thermo.png" /> */}
+            </div>
+          </div>
+          <div className="my-2 col-md-6 col-sm-12">
+            <div className="my-2 col-12 summary__block"></div>
+          </div>
+        </div>
+      </section>
+      <section className="py-3 container" id="portfolio">
+        <div className="row">
+          <div className="my-2 col-sm-7 col-xs-12">
+            <div className="my-2 col-12 portfolio__block"></div>
+          </div>
+          <div className="my-2 col-sm-5 col-xs-12">
+            <div className="my-2 col-12 portfolio__block"></div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="my-2 col-sm-7 col-xs-12">
+            <div className="my-2 col-12 portfolio__block"></div>
+          </div>
+          <div className="my-2 col-sm-5 col-xs-12">
+            <div className="my-2 col-12 portfolio__block"></div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="my-2 col-sm-7 col-xs-12">
+            <div className="my-2 col-12 portfolio__block"></div>
+          </div>
+          <div className="my-2 col-sm-5 col-xs-12">
+            <div className="my-2 col-12 portfolio__block"></div>
+          </div>
+        </div>
+      </section>
+      <section className="py-3 container" id="clients">
+        <div className="row">
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+          <div className="my-2 col-md-2 col-4">
+            <div className="my-2 col-12 clients__block"></div>
+          </div>
+        </div>
+      </section>
+      <section className="py-3 container">
+        <div className="row">
         {renderTilesMobile()}
         </div>
       </section>
