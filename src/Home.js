@@ -1,6 +1,6 @@
 import React from 'react';
 import TileSlide from './TileSlide'
-import logo from './alz_thermo.png';
+import logo from './test.svg';
 const { v4: uuidv4 } = require('uuid');
 
 function Home(){
