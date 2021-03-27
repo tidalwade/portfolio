@@ -1,4 +1,5 @@
 
+
 @import 'main.css';
 @import 'wrapper.css';
 
@@ -25,9 +26,17 @@ body {
 }
 
 #banner .banner__block {
-  background: #cbcbcb;
-  height: 300px;
+  background-image: url('../banner_image.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 400px;
   z-index: -1;
+}
+
+#banner .banner_card {
+  background-color: rgba(1,13,71,0.5);
+  color: #FFF;
+  height: 350px;
 }
 
 #summary .summary__block {

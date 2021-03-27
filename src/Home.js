@@ -1,6 +1,6 @@
 import React from 'react';
 import TileSlide from './TileSlide'
-import logo from './alz_thermo.png';
+// import logo from './banner_image.png';
 const { v4: uuidv4 } = require('uuid');
 
 function Home(){
@@ -49,7 +49,12 @@ function Home(){
       <section className="pt-5 py-0 container" id="banner">
         <div className="row">
           <div className="my-2 col-12">
-          <div className="my-2 col-12 banner__block"></div>
+          <div className="my-2 col-12 banner__block d-flex align-items-center">
+            <div class="banner_card col-6 ml-3">
+              <h2>Hi, I'm Ryan</h2>
+              <p>I'm a web developer and project manager</p>
+            </div>
+          </div>
           </div>
         </div>
       </section>
@@ -57,7 +62,7 @@ function Home(){
         <div className="row">
           <div className="my-2 col-md-6 col-sm-12">
             <div className="my-2 col-12 summary__block">
-              <img src={logo} />
+              {/* <img src={logo} /> */}
               {/* <img src="./alz_thermo.png" /> */}
             </div>
           </div>
