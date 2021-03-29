@@ -29,25 +29,22 @@ body {
   background-image: url('../banner_image.png');
   background-position: center center;
   background-repeat: no-repeat;
-  height: 400px;
-  z-index: -1;
+  height: 300px;
 }
 
 #banner .banner_card {
-  background-color: rgba(1,13,71,0.5);
+  background-color: rgba(1,13,71,.5);
   color: #FFF;
-  height: 350px;
+  height: 250px;
 }
 
 #summary .summary__block {
   background: gray;
   height: 250px;
-  z-index: -1;
 }
 
 #portfolio .portfolio__block:first-of-type {
   height: 250px;
-  z-index: -1;
 }
 
 #portfolio .row > div:last-of-type div {
@@ -65,7 +62,6 @@ body {
 #clients .clients__block {
   background: #cbcbcb;
   height: 175px;
-  z-index: -1;
 }
 
 
