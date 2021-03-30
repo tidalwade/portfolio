@@ -46,7 +46,7 @@ function Home(){
   }
   return(
     <div>
-      <section className="pt-5 py-0 container" id="banner">
+      <section className="pt-5 py-0" id="banner">
         <div className="row">
           <div className="my-2 col-12">
           <div className="my-2 col-12 banner__block d-flex align-items-center">
