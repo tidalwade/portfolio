@@ -61,12 +61,22 @@ function Home(){
       <section className="py-3 container" id="summary">
         <div className="row">
           <div className="my-2 col-md-6 col-sm-12">
-            <div className="my-2 col-12 summary__block">
-              {/* <img src={logo} /> */}
-              {/* <img src="./alz_thermo.png" /> */}
-            </div>
+          <div className="col-6 summary__border center-radius">
+            Web Development
+          </div>
+          <div class="d-flex">
+            <div className="col-3 summary__border left-radius"></div>
+            <div className="col-6"></div>
+            <div className="col-3 summary__border right-radius"></div>
+          </div>
+            <div className="col-12 summary__block"></div>
           </div>
           <div className="my-2 col-md-6 col-sm-12">
+            <div class="d-flex">
+              <div className="col-4"></div>
+              <div className="col-4"></div>
+              <div className="col-4"></div>
+            </div>
             <div className="my-2 col-12 summary__block"></div>
           </div>
         </div>
