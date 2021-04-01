@@ -16,7 +16,7 @@ export default function NavList(props) {
     <>
       <li className="nav-item" 
         className={active === index ? "active" : "unactive"}>
-        <Link className={`nav-link`} activeClass="active" to={linkUrl} spy={false} smooth={true} duration={1000} 
+        <Link className={`nav-link`} activeClass="active" to={linkUrl} spy={false} offset={-50} smooth={true} duration={1000} 
           onClick={() => handleNavigation(index)}>
           {content}
         </Link>

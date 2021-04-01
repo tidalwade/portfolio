@@ -1,5 +1,12 @@
 import React from 'react';
 import TileSlide from './TileSlide'
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(fas, fab);
 // import logo from './banner_image.png';
 const { v4: uuidv4 } = require('uuid');
 
@@ -58,26 +65,36 @@ function Home(){
           </div>
         </div>
       </section>
-      <section className="py-3 container" id="summary">
+      <section className="p-3" id="summary">
+        <div> 
+          <h1 className="section-title">Services</h1>
+        </div>
         <div className="row">
           <div className="my-2 col-md-6 col-sm-12">
           <div className="col-6 summary__border center-radius">
-            Web Development
+            <div className="summary__title">Web Development</div>
           </div>
           <div class="d-flex">
             <div className="col-3 summary__border left-radius"></div>
             <div className="col-6"></div>
             <div className="col-3 summary__border right-radius"></div>
           </div>
-            <div className="col-12 summary__block"></div>
+            <div className="col-12 summary__block">
+              <div className="text-center summary__icon"><FontAwesomeIcon icon="cog" /></div>
+            </div>
           </div>
           <div className="my-2 col-md-6 col-sm-12">
-            <div class="d-flex">
-              <div className="col-4"></div>
-              <div className="col-4"></div>
-              <div className="col-4"></div>
+          <div className="col-6 summary__border center-radius">
+            <div className="summary__title">Web Development</div>
+          </div>
+          <div class="d-flex">
+            <div className="col-3 summary__border left-radius"></div>
+            <div className="col-6"></div>
+            <div className="col-3 summary__border right-radius"></div>
+          </div>
+            <div className="col-12 summary__block">
+              <div className="text-center summary__icon"><FontAwesomeIcon icon="cog" /></div>
             </div>
-            <div className="my-2 col-12 summary__block"></div>
           </div>
         </div>
       </section>
