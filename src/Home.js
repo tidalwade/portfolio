@@ -55,8 +55,8 @@ function Home(){
     <div>
       <section className="pt-5 py-0" id="banner">
         <div className="row">
-          <div className="my-2 col-12">
-          <div className="my-2 col-12 banner__block d-flex align-items-center">
+          <div className="col-12">
+          <div className="col-12 banner__block d-flex align-items-center">
             <div class="banner_card col-6 ml-3">
               <h2>Hi, I'm Ryan</h2>
               <p>I'm a web developer and project manager</p>
@@ -72,22 +72,22 @@ function Home(){
         <div className="row">
           <div className="my-2 col-md-6 col-sm-12">
           <div className="col-6 summary__border center-radius">
-            <div className="summary__title">Web Development</div>
+            <div className="text-center summary__icon"><FontAwesomeIcon icon="cog" /></div>
           </div>
-          <div class="d-flex">
+          <div class="d-flex summary__flex">
             <div className="col-3 summary__border left-radius"></div>
             <div className="col-6"></div>
             <div className="col-3 summary__border right-radius"></div>
           </div>
             <div className="col-12 summary__block">
-              <div className="text-center summary__icon"><FontAwesomeIcon icon="cog" /></div>
+              <div className="summary__title">Web Development</div>
             </div>
           </div>
           <div className="my-2 col-md-6 col-sm-12">
           <div className="col-6 summary__border center-radius">
             <div className="summary__title">Web Development</div>
           </div>
-          <div class="d-flex">
+          <div class="summary__flex d-flex">
             <div className="col-3 summary__border left-radius"></div>
             <div className="col-6"></div>
             <div className="col-3 summary__border right-radius"></div>
@@ -97,6 +97,9 @@ function Home(){
             </div>
           </div>
         </div>
+      </section>
+      <section className="p-3" id="space">
+        <div></div>
       </section>
       <section className="py-3 container" id="portfolio">
         <div className="row">
