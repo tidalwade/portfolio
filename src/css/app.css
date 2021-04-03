@@ -26,11 +26,15 @@ body {
 }
 
 .section-title {
+  height: 300px;
+}
+
+.section-title h1 {
   font-size: 2rem;
-  color: #FFF;
-  border-bottom: 3px solid #FFF;
+  color: #000;
+  border-bottom: 3px solid #000;
   width: 200px;
-  margin: 65px auto;
+  margin: 0 auto;
 }
 
 #banner .banner__block {
@@ -49,7 +53,7 @@ body {
 
 #summary {
   background: linear-gradient(#6b0106,#70373a);
-  margin-top: -25px
+  padding: 5rem 0;
 }
 
 .summary__border {
@@ -95,9 +99,28 @@ body {
 }
 
 .summary__title {
+  margin: 0 1.5rem;
+}
+
+.summary__title h1 {
   font-size: 1.2rem;
   font-weight: bold;
   color: #010D47;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.summary__title h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6b0106;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.summary__title p {
+  font-size: 1rem;
+  color: gray;
   text-align: center;
   padding-top: 20px;
 }
@@ -116,24 +139,83 @@ body {
   background: linear-gradient(to bottom right, #f2f3f5 0%, #f2f3f5 50%, #e9edf5 50%, #e9edf5 100%);
 }
 
+#portfolio > div:first-of-type {
+  margin: 0 auto;
+}
+
 #portfolio .portfolio__block:first-of-type {
-  height: 250px;
+  height: 450px;
 }
 
-#portfolio .row > div:last-of-type div {
-  background: #f5e4ce;
+#portfolio .row:first-of-type > div:last-of-type div {
+  background-color: #0057b8;;
+  color: #FFF;
 }
 
-#portfolio .row > div:first-of-type > div {
-  background: #cedff5;
+#portfolio .row:nth-of-type(2) > div:last-of-type div {
+  background-color: #4a0d66;
+  color: #FFF;
 }
+
+#portfolio .row:nth-of-type(3) > div:last-of-type div {
+  background-color: #003086;
+  color: #FFF;
+}
+
+#portfolio .row:first-of-type > div:first-of-type > div:first-of-type > div {
+  background-image: url('../portfolio_make-a-wish.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portfolio .row:nth-of-type(2) > div:first-of-type > div:first-of-type > div {
+  background-image: url('../portfolio_ride_end_alz.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portfolio .row:nth-of-type(3)> div:first-of-type > div:first-of-type > div {
+  background-image: url('../portfolio_beyond_boston.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* #portfolio .row > div:first-of-type > div:hover {
+  background: rgba(0,0,0,0.8)
+} */
 
 #portfolio .row:nth-of-type(2) {
   flex-direction: row-reverse;
 }
 
+.portfolio__block a {
+  text-decoration: none;
+}
+
+.mission {
+  background: rgba(0,0,0,0);
+  color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.mission:hover {
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+}
+
+.mission p {
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+
 #clients .clients__block {
-  background: #cbcbcb;
   height: 175px;
 }
 
