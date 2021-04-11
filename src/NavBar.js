@@ -10,11 +10,11 @@ function NavBar(){
 
       const navList = [
         {
-            content: 'Home',
-            linkUrl: 'banner',
+            content: 'Contact',
+            linkUrl: 'contact',
         },
         {
-            content: 'About',
+            content: 'Services',
             linkUrl: 'summary',
         },
         {
@@ -22,7 +22,7 @@ function NavBar(){
             linkUrl: 'portfolio',
         },
         {
-            content: 'Contact',
+            content: 'Clients',
             linkUrl: 'clients',
         }
       ]
@@ -37,15 +37,15 @@ function NavBar(){
     };
 
   return (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-expand-lg">
     <div className="container">
-  <a className="navbar-brand" href="#">Ryan Wade</a>
-  <button onClick={handleMobileNavToggle} className="navbar-toggler" type="button">
+    Ryan Wade
+  <button onClick={handleMobileNavToggle} className="navbar-toggler navbar-light" type="button">
     <span className="navbar-toggler-icon"></span>
   </button>
     <ul className={`navbar-collapse offcanvas-collapse ${isOpen ? "show" : ""}`} id="navbarSupportedContent">
 
-    <button onClick={handleMobileNavToggle} className="navbar-toggler" type="button"><span className="navbar-toggler-icon"></span></button>
+    <button onClick={handleMobileNavToggle} className="navbar-toggler navbar-dark" type="button"><span className="navbar-toggler-icon"></span></button>
     <ul className="navbar-nav ml-auto mr-0 no-callout">
       {navList.map((navLists, index) => {
         return (

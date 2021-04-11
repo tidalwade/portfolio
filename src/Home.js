@@ -5,6 +5,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import personalPic from './personal_pic.png';
 import ahalogo from './logo_aha.png';
 import alslogo from './logo_ALS.jpeg';
 import alzlogo from './logo_ALZ.jpeg';
@@ -71,20 +72,52 @@ function Home(){
         <div className="row">
           <div className="col-12">
           <div className="col-12 banner__block d-flex align-items-center">
-            <div class="banner_card col-6 ml-3">
-              <h2>Hi, I'm Ryan</h2>
-              <p>I'm a web developer and project manager</p>
+            <div class="banner_card col-4 offset-1 d-flex justify-content-center align-items-center">
+              <div class="col-11">
+                <h2>Hi, I'm Ryan</h2>
+                <p>I'm a web developer and project manager</p>
+                <p>Let's build something together</p>
+              </div>
+            </div>
+            <div class="col-7 ml-3 personal-pic d-flex justify-content-center">
+              <img src={personalPic} />
             </div>
           </div>
           </div>
         </div>
       </section>
-      <section>
-      <div className="section-title d-flex align-items-center"> 
-        <h1>Services</h1>
-      </div>
+      <section id="contact">
+      <div className="row col-10">
+          <h1>Contact</h1>
+        </div>
+        <div className="col-8 d-flex contact__icons">
+          <div>
+            <a href="mailto:ryantwade@gmail.com">
+              <FontAwesomeIcon icon="envelope" />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/ryantwade">
+              <FontAwesomeIcon icon={['fab','linkedin']} />
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/tidalwade">
+              <FontAwesomeIcon icon={['fab','github']} />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <FontAwesomeIcon icon="download" />
+            </a>
+            <div>Resume</div>
+          </div>
+        </div>
       </section>
       <section id="summary">
+        <div className="row col-10">
+          <h1>Services</h1>
+        </div>
         <div className="row justify-content-center">
           <div className="col-10 d-flex">
             <div className="my-2 col-md-6 col-sm-12">
@@ -128,10 +161,13 @@ function Home(){
           </div>
         </div>
       </section>
-      <section className="p-3" id="space">
+      {/* <section className="p-3" id="space">
         <div></div>
-      </section>
+      </section> */}
       <section className="py-3" id="portfolio">
+        <div className="row col-10 title">
+          <h1>Projects</h1>
+        </div>
         <div className="col-10">
         <div className="row">
           <div className="my-2 col-sm-7 col-xs-12">
@@ -201,8 +237,15 @@ function Home(){
         </div>
         </div>
       </section>
-      <section className="py-3 container" id="clients">
-        <div className="row">
+      <section id="space" className="py-3">
+        <div className="row col-12">
+        </div>
+      </section>
+      <section className="py-5 container" id="clients">
+        <div className="row col-10 title">
+          <h1>Clients</h1>
+        </div>
+        <div className="row col-10 clients__container">
           <div className="my-2 col-md-2 col-4">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={ahalogo} alt="Logo" />
@@ -234,7 +277,7 @@ function Home(){
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row col-10 clients__container">
           <div className="my-2 col-md-2 col-4">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={kkilogo} alt="Logo" />
@@ -267,11 +310,16 @@ function Home(){
           </div>
         </div>
       </section>
-      <section className="py-3 container">
+      <section id="footer">
+        <div className="d-flex justify-content-center">
+        © 2021 Ryan Wade. All rights reserved.
+        </div>
+      </section>
+      {/* <section className="py-3 container">
         <div className="row">
         {renderTilesMobile()}
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
