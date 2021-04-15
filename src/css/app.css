@@ -87,7 +87,7 @@ body {
 
 #contact > div:first-of-type {
   margin: 0 auto;
-  border-bottom: 3px solid darkgoldenrod;
+  border-bottom: 3px solid #087e8bff;
 }
 
 .contact__icons {
@@ -158,8 +158,8 @@ body {
 
 #summary > div:first-of-type {
     margin: 0 auto;
-    color: #e9edf5;
-    border-bottom: 3px solid darkgoldenrod;
+    color: #212529;
+    border-bottom: 3px solid #087e8bff;
 }
 
 #summary > div:nth-of-type(2) {
@@ -224,7 +224,7 @@ body {
 
 #portfolio .title {
   margin: 50px auto;
-  border-bottom: 3px solid darkgoldenrod;
+  border-bottom: 3px solid #087e8bff;
   padding-top: 50px;
 }
 
@@ -315,7 +315,7 @@ body {
 
 #clients .title {
   margin: 0 auto;
-  border-bottom: 3px solid darkgoldenrod;
+  border-bottom: 3px solid #087e8bff;;
 }
 
 #clients .clients__block {
@@ -330,4 +330,9 @@ body {
   height: 200px;
   color: #FFF;
   align-items: center;
+}
+
+.fade {
+  opacity: 0;
+  transition: 0.4s opacity;
 }

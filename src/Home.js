@@ -20,12 +20,17 @@ import sgklogo from './logo_sgk.png';
 import stjlogo from './logo_stj.png';
 // import ahalogo from './logo_aha.png';
 // import ahalogo from './logo_aha.png';
+import fadin from '../node_modules/fadin/dist/fadin.cdj.js';
 
 library.add(fas, fab);
 // import logo from './banner_image.png';
 const { v4: uuidv4 } = require('uuid');
 
 function Home(){
+
+  document.addEventListener("DOMContentLoaded", () => {
+    fadin('.fade')
+  });
 
   const tiles = [
     {
@@ -88,25 +93,25 @@ function Home(){
       </section>
       <section id="contact">
       <div className="row col-10">
-          <h1>Contact</h1>
+          <h3>Contact</h3>
         </div>
         <div className="col-8 d-flex contact__icons">
-          <div>
+          <div className="fade" data-delay=".15s">
             <a href="mailto:ryantwade@gmail.com">
               <FontAwesomeIcon icon="envelope" />
             </a>
           </div>
-          <div>
+          <div className="fade" data-delay=".15s">
             <a href="https://www.linkedin.com/in/ryantwade">
               <FontAwesomeIcon icon={['fab','linkedin']} />
             </a>
           </div>
-          <div>
+          <div className="fade" data-delay=".15s">
             <a href="https://github.com/tidalwade">
               <FontAwesomeIcon icon={['fab','github']} />
             </a>
           </div>
-          <div>
+          <div className="fade" data-delay=".15s">
             <a href="#">
               <FontAwesomeIcon icon="download" />
             </a>
@@ -116,11 +121,11 @@ function Home(){
       </section>
       <section id="summary">
         <div className="row col-10">
-          <h1>Services</h1>
+          <h3>Services</h3>
         </div>
         <div className="row justify-content-center">
           <div className="col-10 d-flex">
-            <div className="my-2 col-md-6 col-sm-12">
+            <div className="my-2 col-md-6 col-sm-12 fade" data-delay=".25s">
               <div className="mx-2">
                 <div className="col-6 summary__border center-radius">
                   <div className="text-center summary__icon"><FontAwesomeIcon icon="cog" /></div>
@@ -139,7 +144,7 @@ function Home(){
                 </div>
               </div>
             </div>
-            <div className="my-2 col-md-6 col-sm-12">
+            <div className="my-2 col-md-6 col-sm-12 fade" data-delay=".25s">
               <div className="mx-2">
                 <div className="col-6 summary__border center-radius">
                   <div className="text-center summary__icon"><FontAwesomeIcon icon="cog" /></div>
@@ -166,11 +171,11 @@ function Home(){
       </section> */}
       <section className="py-3" id="portfolio">
         <div className="row col-10 title">
-          <h1>Projects</h1>
+          <h3>Projects</h3>
         </div>
         <div className="col-10">
         <div className="row">
-          <div className="my-2 col-sm-7 col-xs-12">
+          <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 p-0 col-12">
               <div className="portfolio__block">
               <a href="https://secure2.wish.org/site/SPageServer?pagename=donate_today&chid=100-000" target="_blank">
@@ -181,7 +186,7 @@ function Home(){
               </div>
             </div>
           </div>
-          <div className="my-2 col-sm-5 col-xs-12">
+          <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 col-12 portfolio__block d-flex flex-column justify-content-center">
               <h1 className="text-center">Make-A-Wish Foundation</h1>
               <h2 className="text-center">Donation form</h2>
@@ -190,7 +195,7 @@ function Home(){
           </div>
         </div>
         <div className="row">
-          <div className="my-2 col-sm-7 col-xs-12">
+          <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 p-0 col-12">
               <div className="portfolio__block">
               <a href="https://act.alz.org/site/SPageServer/?pagename=ride_homepage" target="_blank">
@@ -201,7 +206,7 @@ function Home(){
               </div>
             </div>
           </div>
-          <div className="my-2 col-sm-5 col-xs-12">
+          <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 col-12 portfolio__block d-flex flex-column justify-content-center">
               <h1 className="text-center">Alzheimer's Association</h1>
               <h2 className="text-center">Ride to End ALZ</h2>
@@ -210,7 +215,7 @@ function Home(){
           </div>
         </div>
         <div className="row">
-          <div className="my-2 col-sm-7 col-xs-12">
+          <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 p-0 col-12">
             <div className="portfolio__block">
             <a href="https://secure.childrenshospital.org/site/SPageNavigator/Beyond_Boston" target="_blank">
@@ -227,7 +232,7 @@ function Home(){
               </div>
             </div>
           </div>
-          <div className="my-2 col-sm-5 col-xs-12">
+          <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 col-12 portfolio__block d-flex flex-column justify-content-center">
               <h1 className="text-center">Beyond Children's Hospital Trust</h1>
               <h2 className="text-center">Beyond Boston</h2>
@@ -243,7 +248,7 @@ function Home(){
       </section>
       <section className="py-5 container" id="clients">
         <div className="row col-10 title">
-          <h1>Clients</h1>
+          <h3>Clients</h3>
         </div>
         <div className="row col-10 clients__container">
           <div className="my-2 col-md-2 col-4">
