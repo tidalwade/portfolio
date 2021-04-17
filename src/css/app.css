@@ -387,6 +387,7 @@ body {
 
   #summary .summary__container {
     flex-direction: column;
+    height: 100%;
   }
 
   #summary .summary__container > div > div {
