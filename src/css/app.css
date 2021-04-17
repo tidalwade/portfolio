@@ -397,7 +397,7 @@ body {
     margin: 0;
   }
   #summary .summary__block {
-    height: auto;
+    height: 100%;
   }
 
   #space {
