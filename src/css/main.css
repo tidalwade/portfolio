@@ -1,3 +1,5 @@
+
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -4575,7 +4577,7 @@ input[type="button"].btn-block {
     visibility: visible;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
-    background: radial-gradient(at 20% 30%, #00529B, 60%, #032e54);
+    background: radial-gradient(at 20% 30%, #0b3954ff, 60%, #0b3954ff);
     margin: 0;
   }
   /* line 159, src/sass/components/_nav.scss */
@@ -4593,10 +4595,11 @@ input[type="button"].btn-block {
   /* line 168, src/sass/components/_nav.scss */
   .offcanvas-collapse.show button.navbar-toggler {
     color: white !important;
-    font-size: 2rem;
+    font-size: 4rem;
+    font-weight: bold;
     position: fixed;
-    top: .5em;
-    right: .5em;
+    top: -.1em;
+    right: .15em;
   }
   /* line 175, src/sass/components/_nav.scss */
   .offcanvas-collapse.show .nav-item {

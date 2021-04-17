@@ -45,7 +45,7 @@ function NavBar(){
   </button>
     <ul className={`navbar-collapse offcanvas-collapse ${isOpen ? "show" : ""}`} id="navbarSupportedContent">
 
-    <button onClick={handleMobileNavToggle} className="navbar-toggler navbar-dark" type="button"><span className="navbar-toggler-icon"></span></button>
+    <button onClick={handleMobileNavToggle} className="navbar-toggler navbar-dark" type="button">&times;</button>
     <ul className="navbar-nav ml-auto mr-0 no-callout">
       {navList.map((navLists, index) => {
         return (
