@@ -166,7 +166,163 @@ function Home(){
           </div>
         </div>
       </section>
-    
+      <section className="py-3" id="portfolio">
+        <div className="row col-10 title">
+          <h3>Projects</h3>
+        </div>
+        <div className="col-md-10 col-12">
+        <div className="row">
+          <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
+            <div className="my-2 p-0 col-12">
+              <div className="portfolio__block">
+              <a href="https://secure2.wish.org/site/SPageServer?pagename=donate_today&chid=100-000" target="_blank">
+                <div className="mission px-3 d-flex flex-column justify-content-center">
+                  <p>The mission of the Make-A-Wish Foundation is to create life-changing wishes for children with critical illnesses. The children we serve are fighting for their lives, and their families are doing everything that they can to help them in their battles.</p>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
+            <div className="my-2 col-12 portfolio__block_description d-flex flex-column justify-content-center">
+              <h1 className="text-center">Make-A-Wish Foundation</h1>
+              <h2 className="text-center">Donation form</h2>
+              <p>National and affiliate donation form with custom conditional content for each MAW chapter</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
+            <div className="my-2 p-0 col-12">
+              <div className="portfolio__block">
+              <a href="https://act.alz.org/site/SPageServer/?pagename=ride_homepage" target="_blank">
+                <div className="mission px-3 d-flex flex-column justify-content-center">
+                  <p>Mission: To eliminate Alzheimer's disease through the advancement of research; to provide and enhance care and support for all affected; and to reduce the risk of dementia through the promotion of brain health.</p>
+                </div>
+              </a>
+              </div>
+            </div>
+          </div>
+          <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
+            <div className="my-2 col-12 portfolio__block_description d-flex flex-column justify-content-center">
+              <h1 className="text-center">Alzheimer's Association</h1>
+              <h2 className="text-center">Ride to End ALZ</h2>
+              <p>Event hub for registration, participant engagement, and donations</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
+            <div className="my-2 p-0 col-12">
+            <div className="portfolio__block">
+            <a href="https://secure.childrenshospital.org/site/SPageNavigator/Beyond_Boston" target="_blank">
+                <div className="mission px-3 d-flex flex-column justify-content-center">
+                  <p>For over 150 years, Boston Children's Hospital has maintained the same vision: to advance pediatric care worldwide. Our four-part mission is to:</p>
+                  <ul>
+                    <li>provide the highest quality of health care</li>
+                    <li>lead the way in research and discovery</li>
+                    <li>educate the next generation of leaders in health care</li>
+                    <li>enhance the health and well-being of the children and families in our local community</li>
+                  </ul>
+                </div>
+              </a>
+              </div>
+            </div>
+          </div>
+          <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
+            <div className="my-2 col-12 portfolio__block_description d-flex flex-column justify-content-center">
+              <h1 className="text-center">Beyond Children's Hospital Trust</h1>
+              <h2 className="text-center">Beyond Boston</h2>
+              <p>Highlighting BCHT and asking for more money</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section id="space" className="py-3">
+        <div className="row col-12">
+        </div>
+      </section>
+      <section className="py-5 container" id="clients">
+        <div className="row col-10 title">
+          <h3>Clients</h3>
+        </div>
+        <div className="row col-md-10 col-12 clients__container first_row">
+          <div className="my-2 col-md-2 col-6">
+            <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={ahalogo} alt="Logo" />
+            </div>
+          </div>
+          <div className="my-2 col-md-2 col-6">
+            <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={alslogo} alt="Logo" />
+            </div>
+          </div>
+          <div className="my-2 col-md-2 col-6">
+            <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={alzlogo} alt="Logo" />
+            </div>
+          </div>
+          <div className="my-2 col-md-2 col-6">
+            <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={bchtlogo} alt="Logo" />
+            </div>
+          </div>
+          <div className="my-2 col-md-2 col-6">
+            <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={bfaslogo} alt="Logo" />
+            </div>
+          </div>
+          <div className="my-2 col-md-2 col-6">
+            <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={ccfalogo} alt="Logo" />
+            </div>
+          </div>
+        </div>
+        <div className="row col-md-10 col-12 clients__container second_row">
+          <div className="my-2 col-md-2 col-6">
+            <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={kkilogo} alt="Logo" />
+            </div>
+          </div>
+          <div className="my-2 col-md-2 col-6">
+          <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={mawlogo} alt="Logo" />
+            </div>
+          </div>
+          <div className="my-2 col-md-2 col-6">
+          <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={nypllogo} alt="Logo" />
+            </div>
+          </div>
+          <div className="my-2 col-md-2 col-6">
+          <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={rcflogo} alt="Logo" />
+            </div>
+          </div>
+          <div className="my-2 col-md-2 col-6">
+          <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={sgklogo} alt="Logo" />
+            </div>
+          </div>
+          <div className="my-2 col-md-2 col-6">
+          <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
+            <img src={stjlogo} alt="Logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div className="d-flex justify-content-center">
+        © 2021 Ryan Wade. All rights reserved.
+        </div>
+      </section>
+
+      {/* <section className="py-3 container">
+        <div className="row">
+        {renderTilesMobile()}
+        </div>
+      </section> */}
     </div>
   )
 }
