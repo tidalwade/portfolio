@@ -390,6 +390,10 @@ body {
     height: 100%;
   }
 
+  #summary .summary__container > div:last-of-type {
+    padding-bottom: 50px;
+  }
+
   #summary .summary__container > div > div {
     margin: 0!important;
   }
