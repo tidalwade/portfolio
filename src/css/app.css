@@ -446,8 +446,52 @@ body {
     height: 125px;
   }
 
-  #clients .clients__block img {
-    max-height: 127px;
+  .clients__container.first_row > div:first-of-type img {
+    max-height: 85px;
+  }
+
+  .clients__container.first_row > div:nth-of-type(2) img {
+    max-height: 75px;
+  }
+
+  .clients__container.first_row > div:nth-of-type(3) img {
+    max-height: 125px;
+  }
+
+  .clients__container.first_row > div:nth-of-type(4) img {
+    max-height: 70px;
+  }
+
+  .clients__container.first_row > div:nth-of-type(5) img {
+    max-height: 53px;
+  }
+
+  .clients__container.first_row > div:last-of-type img {
+    max-height: 85px;
+  }
+
+  .clients__container.second_row > div:first-of-type img {
+    max-height: 55px;
+  }
+
+  .clients__container.second_row > div:nth-of-type(2) img {
+    max-height: 52px;
+  }
+
+  .clients__container.second_row > div:nth-of-type(3) img {
+    max-height: 54px;
+  }
+
+  .clients__container.second_row > div:nth-of-type(4) img {
+    max-height: 42px;
+  }
+
+  .clients__container.second_row > div:nth-of-type(5) img {
+    max-height: 70px;
+  }
+
+  .clients__container.second_row > div:last-of-type img {
+    max-height: 77px;
   }
 
   #footer div {

@@ -247,7 +247,7 @@ function Home(){
         <div className="row col-10 title">
           <h3>Clients</h3>
         </div>
-        <div className="row col-md-10 col-12 clients__container">
+        <div className="row col-md-10 col-12 clients__container first_row">
           <div className="my-2 col-md-2 col-6">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={ahalogo} alt="Logo" />
@@ -279,7 +279,7 @@ function Home(){
             </div>
           </div>
         </div>
-        <div className="row col-md-10 col-12 clients__container">
+        <div className="row col-md-10 col-12 clients__container second_row">
           <div className="my-2 col-md-2 col-6">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={kkilogo} alt="Logo" />
