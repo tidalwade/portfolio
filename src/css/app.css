@@ -446,6 +446,10 @@ body {
     height: 125px;
   }
 
+  #clients .clients__block img {
+    height: 127px;
+  }
+
   #footer div {
     padding: 0 1rem;
     text-align: center;
