@@ -447,7 +447,7 @@ body {
   }
 
   #clients .clients__block img {
-    height: 127px;
+    max-height: 127px;
   }
 
   #footer div {
