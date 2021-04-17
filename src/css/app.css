@@ -349,6 +349,7 @@ body {
   }
   #banner .personal-pic img {
     width: 90%;
+    height: 90%;
   }
 
   #contact {
@@ -444,7 +445,7 @@ body {
   #clients .clients__block {
     height: 125px;
   }
-  
+
   #footer div {
     padding: 0 1rem;
     text-align: center;
