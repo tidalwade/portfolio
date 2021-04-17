@@ -232,7 +232,7 @@ body {
   margin: 0 auto;
 }
 
-#portfolio .portfolio__block:first-of-type {
+#portfolio .portfolio__block, #portfolio .portfolio__block_description {
   height: 450px;
 }
 
@@ -323,7 +323,7 @@ body {
 }
 
 #footer {
-  background: #010D47;
+  background: #0b3954ff;;
 }
 
 #footer div {
@@ -335,4 +335,118 @@ body {
 .fade {
   opacity: 0;
   transition: 0.4s opacity;
+}
+
+@media only screen and (max-width: 767px) {
+  #banner .banner__block {
+    flex-direction: column;
+    height: auto;
+    padding-top: 2rem;
+  }
+  #banner .personal-pic {
+    margin: 0 auto!important;
+    padding: 1rem;
+  }
+  #banner .personal-pic img {
+    width: 90%;
+  }
+
+  #contact {
+    padding: 50px 0;
+  }
+
+  #contact h3 {
+    margin: 10px auto;
+  }
+
+  #contact .contact__icons {
+    padding: 0;
+  }
+
+  #contact .contact__icons svg {
+    width: 60px;
+  }
+
+  .contact__icons > div:last-of-type > div {
+    font-size: 0.6rem;
+  }
+
+  #summary {
+    clip-path: none;
+    padding: 2rem 0;
+  }
+
+  #summary h3 {
+    margin: 10px auto;
+  }
+
+  #summary > div:nth-of-type(2) {
+    padding: 60px 0 25px;
+  }
+
+  #summary .summary__container {
+    flex-direction: column;
+  }
+
+  #summary .summary__container > div > div {
+    margin: 0!important;
+  }
+
+  #summary .summary__title {
+    margin: 0;
+  }
+  #summary .summary__block {
+    height: auto;
+  }
+
+  #space {
+    display: none;
+  }
+
+  #portfolio .row:first-of-type > div:first-of-type > div:first-of-type > div {
+    background-image: url('../portfolio_make-a-wish_mobile.png');
+  }
+
+  #portfolio .portfolio__block {
+    height: 350px;
+  }
+
+  #portfolio .portfolio__block_description {
+    height: auto;
+  }
+
+  #portfolio .portfolio__block_description h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  #portfolio .portfolio__block_description h2 {
+    font-size: 1.25rem;
+  }
+  #portfolio .portfolio__block_description p {
+    text-align: center;
+  }
+
+  #portfolio .title {
+    margin: 0px auto 25px;
+  }
+  #portfolio .title h3 {
+    margin: 10px auto;
+  }
+
+  #clients .clients__container > div {
+    margin: 0!important;
+  }
+
+  #clients .title h3 {
+    margin: 10px auto;
+  }
+
+  #clients .clients__block {
+    height: 125px;
+  }
+  
+  #footer div {
+    padding: 0 1rem;
+    text-align: center;
+  }
 }

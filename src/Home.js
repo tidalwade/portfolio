@@ -77,14 +77,14 @@ function Home(){
         <div className="row">
           <div className="col-12">
           <div className="col-12 banner__block d-flex align-items-center">
-            <div class="banner_card col-4 offset-1 d-flex justify-content-center align-items-center">
-              <div class="col-11">
+            <div class="banner_card col-lg-4 col-md-5 col-12 offset-md-1 d-flex justify-content-center align-items-center">
+              <div class="col-md-11 col-12">
                 <h2>Hi, I'm Ryan</h2>
                 <p>I'm a web developer and project manager</p>
                 <p>Let's build something together</p>
               </div>
             </div>
-            <div class="col-7 ml-3 personal-pic d-flex justify-content-center">
+            <div class="col-md-7 col-12 ml-3 personal-pic d-flex justify-content-center">
               <img src={personalPic} />
             </div>
           </div>
@@ -95,7 +95,7 @@ function Home(){
       <div className="row col-10">
           <h3>Contact</h3>
         </div>
-        <div className="col-8 d-flex contact__icons">
+        <div className="col-md-8 col-12 d-flex contact__icons">
           <div className="fade" data-delay=".15s">
             <a href="mailto:ryantwade@gmail.com">
               <FontAwesomeIcon icon="envelope" />
@@ -124,8 +124,8 @@ function Home(){
           <h3>Services</h3>
         </div>
         <div className="row justify-content-center">
-          <div className="col-10 d-flex">
-            <div className="my-2 col-md-6 col-sm-12 fade" data-delay=".25s">
+          <div className="col-md-10 col-12 d-flex summary__container">
+            <div className="my-2 col-md-6 col-12 fade" data-delay=".25s">
               <div className="mx-2">
                 <div className="col-6 summary__border center-radius">
                   <div className="text-center summary__icon"><FontAwesomeIcon icon="cog" /></div>
@@ -144,7 +144,7 @@ function Home(){
                 </div>
               </div>
             </div>
-            <div className="my-2 col-md-6 col-sm-12 fade" data-delay=".25s">
+            <div className="my-2 col-md-6 col-12 fade" data-delay=".25s">
               <div className="mx-2">
                 <div className="col-6 summary__border center-radius">
                   <div className="text-center summary__icon"><FontAwesomeIcon icon="cog" /></div>
@@ -166,14 +166,11 @@ function Home(){
           </div>
         </div>
       </section>
-      {/* <section className="p-3" id="space">
-        <div></div>
-      </section> */}
       <section className="py-3" id="portfolio">
         <div className="row col-10 title">
           <h3>Projects</h3>
         </div>
-        <div className="col-10">
+        <div className="col-md-10 col-12">
         <div className="row">
           <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 p-0 col-12">
@@ -187,7 +184,7 @@ function Home(){
             </div>
           </div>
           <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
-            <div className="my-2 col-12 portfolio__block d-flex flex-column justify-content-center">
+            <div className="my-2 col-12 portfolio__block_description d-flex flex-column justify-content-center">
               <h1 className="text-center">Make-A-Wish Foundation</h1>
               <h2 className="text-center">Donation form</h2>
               <p>National and affiliate donation form with custom conditional content for each MAW chapter</p>
@@ -207,7 +204,7 @@ function Home(){
             </div>
           </div>
           <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
-            <div className="my-2 col-12 portfolio__block d-flex flex-column justify-content-center">
+            <div className="my-2 col-12 portfolio__block_description d-flex flex-column justify-content-center">
               <h1 className="text-center">Alzheimer's Association</h1>
               <h2 className="text-center">Ride to End ALZ</h2>
               <p>Event hub for registration, participant engagement, and donations</p>
@@ -233,7 +230,7 @@ function Home(){
             </div>
           </div>
           <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
-            <div className="my-2 col-12 portfolio__block d-flex flex-column justify-content-center">
+            <div className="my-2 col-12 portfolio__block_description d-flex flex-column justify-content-center">
               <h1 className="text-center">Beyond Children's Hospital Trust</h1>
               <h2 className="text-center">Beyond Boston</h2>
               <p>Highlighting BCHT and asking for more money</p>
@@ -250,65 +247,65 @@ function Home(){
         <div className="row col-10 title">
           <h3>Clients</h3>
         </div>
-        <div className="row col-10 clients__container">
-          <div className="my-2 col-md-2 col-4">
+        <div className="row col-md-10 col-12 clients__container">
+          <div className="my-2 col-md-2 col-6">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={ahalogo} alt="Logo" />
             </div>
           </div>
-          <div className="my-2 col-md-2 col-4">
+          <div className="my-2 col-md-2 col-6">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={alslogo} alt="Logo" />
             </div>
           </div>
-          <div className="my-2 col-md-2 col-4">
+          <div className="my-2 col-md-2 col-6">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={alzlogo} alt="Logo" />
             </div>
           </div>
-          <div className="my-2 col-md-2 col-4">
+          <div className="my-2 col-md-2 col-6">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={bchtlogo} alt="Logo" />
             </div>
           </div>
-          <div className="my-2 col-md-2 col-4">
+          <div className="my-2 col-md-2 col-6">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={bfaslogo} alt="Logo" />
             </div>
           </div>
-          <div className="my-2 col-md-2 col-4">
+          <div className="my-2 col-md-2 col-6">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={ccfalogo} alt="Logo" />
             </div>
           </div>
         </div>
-        <div className="row col-10 clients__container">
-          <div className="my-2 col-md-2 col-4">
+        <div className="row col-md-10 col-12 clients__container">
+          <div className="my-2 col-md-2 col-6">
             <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={kkilogo} alt="Logo" />
             </div>
           </div>
-          <div className="my-2 col-md-2 col-4">
+          <div className="my-2 col-md-2 col-6">
           <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={mawlogo} alt="Logo" />
             </div>
           </div>
-          <div className="my-2 col-md-2 col-4">
+          <div className="my-2 col-md-2 col-6">
           <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={nypllogo} alt="Logo" />
             </div>
           </div>
-          <div className="my-2 col-md-2 col-4">
+          <div className="my-2 col-md-2 col-6">
           <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={rcflogo} alt="Logo" />
             </div>
           </div>
-          <div className="my-2 col-md-2 col-4">
+          <div className="my-2 col-md-2 col-6">
           <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={sgklogo} alt="Logo" />
             </div>
           </div>
-          <div className="my-2 col-md-2 col-4">
+          <div className="my-2 col-md-2 col-6">
           <div className="my-2 col-12 clients__block d-flex flex-column justify-content-center p-0 m-0">
             <img src={stjlogo} alt="Logo" />
             </div>
@@ -320,6 +317,7 @@ function Home(){
         © 2021 Ryan Wade. All rights reserved.
         </div>
       </section>
+
       {/* <section className="py-3 container">
         <div className="row">
         {renderTilesMobile()}
