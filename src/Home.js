@@ -138,8 +138,8 @@ function Home(){
                 <div className="col-12 summary__block">
                   <div className="summary__title">
                     <h1>Web Development</h1>
-                    <h2>Web focused</h2>
-                    <p>A website should be designed for the people who will use it, so that's exactly what I do. User focused design should be the primary goal of any website.</p>
+                    <h2>Front End</h2>
+                    <p>Creating elegant and intuitive websites is my goal. Helping YOU get there is my passion. I employ a wealth of experience, curiosity, and data-driven results to guide you along the way.</p>
                   </div>
                 </div>
               </div>
@@ -147,7 +147,7 @@ function Home(){
             <div className="my-2 col-md-6 col-12 fade" data-delay=".25s">
               <div className="mx-2">
                 <div className="col-6 summary__border center-radius">
-                  <div className="text-center summary__icon"><FontAwesomeIcon icon="cog" /></div>
+                  <div className="text-center summary__icon"><FontAwesomeIcon icon="calendar-check" /></div>
                 </div>
                 <div class="d-flex summary__flex">
                   <div className="col-3 summary__border left-radius"></div>
@@ -156,9 +156,9 @@ function Home(){
                 </div>
                 <div className="col-12 summary__block">
                   <div className="summary__title">
-                    <h1>Web Development</h1>
-                    <h2>Web focused</h2>
-                    <p>A website should be designed for the people who will use it, so that's exactly what I do. User focused design should be the primary goal of any website.</p>
+                    <h1>Project Management</h1>
+                    <h2>PMP Certified</h2>
+                    <p>My path in the tech arena began as a project manager. I've learend it's always possible to provide an achievable and realistic plan, while still being nimble, for each project milestone.</p>
                   </div>
                 </div>
               </div>
@@ -168,7 +168,7 @@ function Home(){
       </section>
       <section className="py-3" id="portfolio">
         <div className="row col-10 title">
-          <h3>Projects</h3>
+          <h3>Web Development Projects</h3>
         </div>
         <div className="col-md-10 col-12">
         <div className="row">

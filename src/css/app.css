@@ -22,6 +22,16 @@ body {
   margin: 0;
 }
 
+.btn {
+  box-shadow: none!important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background: #087e8bff;
+  border-color: #087e8bff;
+  box-shadow: none!important;
+}
+
 .btn-primary {
   color: #fff;
   background-color: transparent;
@@ -30,6 +40,15 @@ body {
   border-radius: 50px;
   width: 200px;
   margin: 0 auto;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  color: #FFF;
+  background-color: #087e8bff;
+  border-color: #087e8bff;
+  box-shadow: none!important;
 }
 
 .mr-1 {
@@ -61,7 +80,7 @@ body {
 
 .section-title h1 {
   font-size: 2rem;
-  color: #000;
+  color: #0b3954ff;
   border-bottom: 3px solid #000;
   width: 200px;
   margin: 0 auto;
@@ -96,6 +115,7 @@ body {
 }
 
 #contact > div:first-of-type {
+  color: #0b3954ff;
   margin: 0 auto;
   border-bottom: 3px solid #087e8bff;
 }
@@ -114,7 +134,7 @@ body {
 }
 
 .contact__icons > div:nth-of-type(2), .contact__icons > div:nth-of-type(2) a, .contact__icons > div:nth-of-type(2) a:hover {
-  color: #6b0106;
+  color: #087e8bff;;
 }
 
 .contact__icons > div:nth-of-type(3), .contact__icons > div:nth-of-type(3) a, .contact__icons > div:nth-of-type(3) a:hover {
@@ -168,7 +188,7 @@ body {
 
 #summary > div:first-of-type {
     margin: 0 auto;
-    color: #212529;
+    color: #0b3954ff;
     border-bottom: 3px solid #087e8bff;
 }
 
@@ -198,17 +218,16 @@ body {
 .summary__title h1 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #010D47;
+  color: #0b3954ff;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .summary__title h2 {
   font-size: 1rem;
   font-weight: bold;
-  color: #6b0106;
+  color: #c81d25ff;
   text-align: center;
-  padding-top: 20px;
 }
 
 .summary__title p {
@@ -220,7 +239,7 @@ body {
 
 .summary__icon {
   font-size: 2.5rem;
-  color: #010D47;
+  color: #087e8bff;
 }
 
 .summary__icon svg {
@@ -233,6 +252,7 @@ body {
 }
 
 #portfolio .title {
+  color: #0b3954ff;
   margin: 50px auto;
   border-bottom: 3px solid #087e8bff;
   padding-top: 50px;
@@ -251,7 +271,7 @@ body {
 #portfolio .portfolio__block {
   height: 100%;
   width: 100%;
-  transition: all 1s;
+  transition: all 2s;
 }
 
 #portfolio .portfolio__block_description {
@@ -349,6 +369,7 @@ body {
 }
 
 #clients .title {
+  color: #0b3954ff;
   margin: 0 auto;
   border-bottom: 3px solid #087e8bff;;
 }
@@ -385,6 +406,10 @@ body {
   #banner .personal-pic img {
     width: 90%;
     height: 90%;
+  }
+
+  #banner .banner_card h2 {
+    font-size: 1.75rem;
   }
 
   #contact {
