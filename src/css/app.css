@@ -41,7 +41,7 @@ body {
   width: 200px;
   margin: 0 auto;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
