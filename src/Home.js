@@ -96,22 +96,22 @@ function Home(){
           <h3>Contact</h3>
         </div>
         <div className="col-md-8 col-12 d-flex contact__icons">
-          <div className="fade" data-delay=".15s">
+          <div>
             <a href="mailto:ryantwade@gmail.com">
               <FontAwesomeIcon icon="envelope" />
             </a>
           </div>
-          <div className="fade" data-delay=".15s">
+          <div>
             <a href="https://www.linkedin.com/in/ryantwade">
               <FontAwesomeIcon icon={['fab','linkedin']} />
             </a>
           </div>
-          <div className="fade" data-delay=".15s">
+          <div>
             <a href="https://github.com/tidalwade">
               <FontAwesomeIcon icon={['fab','github']} />
             </a>
           </div>
-          <div className="fade" data-delay=".15s">
+          <div>
             <a href="#">
               <FontAwesomeIcon icon="download" />
             </a>
@@ -173,11 +173,11 @@ function Home(){
         <div className="col-md-10 col-12">
         <div className="row">
           <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
-            <div className="my-2 p-0 col-12">
+            <div className="my-2 p-0 col-12 portfolio_block_container">
               <div className="portfolio__block">
               <a href="https://secure2.wish.org/site/SPageServer?pagename=donate_today&chid=100-000" target="_blank">
                 <div className="mission px-3 d-flex flex-column justify-content-center">
-                  <p>The mission of the Make-A-Wish Foundation is to create life-changing wishes for children with critical illnesses. The children we serve are fighting for their lives, and their families are doing everything that they can to help them in their battles.</p>
+                  <a className="btn btn-primary" href="https://secure2.wish.org/site/SPageServer?pagename=donate_today&chid=100-000">Visit Site</a>
                 </div>
                 </a>
               </div>
@@ -193,11 +193,11 @@ function Home(){
         </div>
         <div className="row">
           <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
-            <div className="my-2 p-0 col-12">
+            <div className="my-2 p-0 col-12 portfolio_block_container" >
               <div className="portfolio__block">
               <a href="https://act.alz.org/site/SPageServer/?pagename=ride_homepage" target="_blank">
                 <div className="mission px-3 d-flex flex-column justify-content-center">
-                  <p>Mission: To eliminate Alzheimer's disease through the advancement of research; to provide and enhance care and support for all affected; and to reduce the risk of dementia through the promotion of brain health.</p>
+                <a className="btn btn-primary" href="https://act.alz.org/site/SPageServer/?pagename=ride_homepage">Visit Site</a>
                 </div>
               </a>
               </div>
@@ -213,17 +213,11 @@ function Home(){
         </div>
         <div className="row">
           <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
-            <div className="my-2 p-0 col-12">
+            <div className="my-2 p-0 col-12 portfolio_block_container">
             <div className="portfolio__block">
             <a href="https://secure.childrenshospital.org/site/SPageNavigator/Beyond_Boston" target="_blank">
                 <div className="mission px-3 d-flex flex-column justify-content-center">
-                  <p>For over 150 years, Boston Children's Hospital has maintained the same vision: to advance pediatric care worldwide. Our four-part mission is to:</p>
-                  <ul>
-                    <li>provide the highest quality of health care</li>
-                    <li>lead the way in research and discovery</li>
-                    <li>educate the next generation of leaders in health care</li>
-                    <li>enhance the health and well-being of the children and families in our local community</li>
-                  </ul>
+                  <a className="btn btn-primary" href="https://secure.childrenshospital.org/site/SPageNavigator/Beyond_Boston">Visit Site</a>
                 </div>
               </a>
               </div>

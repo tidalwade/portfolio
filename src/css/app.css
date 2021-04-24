@@ -22,6 +22,16 @@ body {
   margin: 0;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border-color: #6c757d;
+  border: 2px solid #FFF;
+  border-radius: 50px;
+  width: 200px;
+  margin: 0 auto;
+}
+
 .mr-1 {
   margin-right: 5px;
 }
@@ -232,7 +242,19 @@ body {
   margin: 0 auto;
 }
 
-#portfolio .portfolio__block, #portfolio .portfolio__block_description {
+#portfolio .portfolio_block_container {
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#portfolio .portfolio__block {
+  height: 100%;
+  width: 100%;
+  transition: all 1s;
+}
+
+#portfolio .portfolio__block_description {
   height: 450px;
 }
 
@@ -272,6 +294,11 @@ body {
   background-size: cover;
 }
 
+#portfolio .portfolio_block_container:hover .portfolio__block,
+#portfolio .portfolio_block_container:focus .portfolio__block {
+  transform: scale(1.1);
+}
+
 /* #portfolio .row > div:first-of-type > div:hover {
   background: rgba(0,0,0,0.8)
 } */
@@ -302,6 +329,14 @@ body {
   width: 100%;
   height: 100%;
   color: #FFF;
+}
+
+.mission a {
+  display: none;
+}
+
+.mission:hover a {
+  display: block;
 }
 
 .mission p {
@@ -413,7 +448,7 @@ body {
     background-image: url('../portfolio_make-a-wish_mobile.png');
   }
 
-  #portfolio .portfolio__block {
+  #portfolio .portfolio_block_container {
     height: 350px;
   }
 
