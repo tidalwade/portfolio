@@ -448,12 +448,26 @@ body {
   transition: 0.4s opacity;
 }
 
+@media only screen and (min-width: 768px) {
+  .navbar-nav li:first-of-type {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 767px) {
+  .navbar-nav.no-callout {
+    padding-top: 4rem;
+  }
+  
   .navbar-nav .nav-link {
     padding: 0.25rem 0.15rem;
     border-bottom: 3px solid darkgoldenrod;
     margin-right: 5rem;
     font-size: 1.25rem!important;
+  }
+
+  .offcanvas-collapse.show .navbar-nav li {
+    margin: 0.35rem 4%;
   }
 
   #banner .banner__block {

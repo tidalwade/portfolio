@@ -11,6 +11,10 @@ function NavBar(){
 
       const navList = [
         {
+          content: 'Home',
+          linkUrl: 'banner',
+        },
+        {
             content: 'Contact',
             linkUrl: 'contact',
         },
