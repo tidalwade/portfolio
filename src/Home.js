@@ -19,9 +19,11 @@ import nypllogo from './logo_nypl.jpg';
 import rcflogo from './logo_rcf.png';
 import sgklogo from './logo_sgk.png';
 import stjlogo from './logo_stj.png';
+import pdf from './Ryan_Wade_Web_Developer_Resume.pdf';
 // import ahalogo from './logo_aha.png';
 // import ahalogo from './logo_aha.png';
 import fadin from '../node_modules/fadin/dist/fadin.cdj.js';
+import DownloadLink from "react-download-link";
 
 library.add(fas, fab);
 // import logo from './banner_image.png';
@@ -113,7 +115,12 @@ function Home(){
             </a>
           </div>
           <div>
-            <a href="#">
+          {/* <DownloadLink
+            label="Save"
+            filename="Ryan_Wade_Web_Developer_Resume.pdf"
+            exportFile={() => "./Ryan_Wade_Web_Developer_Resume.pdf"}
+          /> */}
+            <a href={pdf} download>
               <FontAwesomeIcon icon="download" />
             </a>
             <div>Resume</div>
@@ -189,7 +196,7 @@ function Home(){
               <h2 className="text-center">Make-A-Wish Foundation</h2>
               <div className="portfolio__block_more_description one d-flex flex-column justify-content-center">
                 <h4 className="text-center">Donation Form</h4>
-                <p>National and affiliate donation form built with custom components allowing each chapter to create and maintain their own personal brand and needs</p>
+                <p>National and affiliate donation form built with custom components allowing each chapter to create their own personal brand and needs</p>
               </div>
             </div>
           </div>
