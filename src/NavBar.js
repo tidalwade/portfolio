@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
+import { Link } from 'react-scroll';
 import NavList from './NavList'
 const { v4: uuidv4 } = require('uuid');
 
@@ -39,7 +40,9 @@ function NavBar(){
   return (
   <nav className="navbar navbar-expand-lg">
     <div className="container">
-    Ryan Wade
+    <Link className={`nav-link`} activeClass="active" to={'banner'} spy={false} offset={-50} smooth={true} duration={1200}>
+    <div>Ryan Wade</div>
+    </Link>
   <button onClick={handleMobileNavToggle} className="navbar-toggler navbar-light" type="button">
     <span className="navbar-toggler-icon"></span>
   </button>

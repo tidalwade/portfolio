@@ -27,8 +27,8 @@ body {
 }
 
 .btn-primary:not(:disabled):not(.disabled):active {
-  background: #087e8bff;
-  border-color: #087e8bff;
+  background: #000;
+  border-color: #000;
   box-shadow: none!important;
 }
 
@@ -45,9 +45,9 @@ body {
 }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-  color: #FFF;
-  background-color: #087e8bff;
-  border-color: #087e8bff;
+  color: #000;
+  background-color: #FFF;
+  border-color: #FFF;
   box-shadow: none!important;
 }
 
@@ -251,6 +251,10 @@ body {
   margin-top: -100px;
 }
 
+#portfolio .row {
+  margin-bottom: 2rem;
+}
+
 #portfolio .title {
   color: #0b3954ff;
   margin: 50px auto;
@@ -278,19 +282,56 @@ body {
   height: 450px;
 }
 
-#portfolio .row:first-of-type > div:last-of-type div {
-  background-color: #0057b8;;
+#portfolio .row:first-of-type > div:last-of-type > div {
+  background-color: #0057b8;
   color: #FFF;
 }
 
-#portfolio .row:nth-of-type(2) > div:last-of-type div {
+#portfolio .row:first-of-type > div:last-of-type > div > div {
+  background-color: #FFF;
+  color: #0057b8;
+  margin: 0 -5px;
+  height: 300px;
+}
+
+#portfolio .row:first-of-type > div:last-of-type > div > div h4, #portfolio .row:nth-of-type(2) > div:last-of-type > div > div h4, #portfolio .row:nth-of-type(3) > div:last-of-type > div > div h4 {
+  color: #484848;
+  border-bottom: 3px solid #c81d25ff;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+#portfolio .row:first-of-type > div:last-of-type > div > div p, #portfolio .row:nth-of-type(2) > div:last-of-type > div > div p, #portfolio .row:nth-of-type(3) > div:last-of-type > div > div p {
+  margin: 25px 15px 0;
+  color: gray;
+}
+
+
+
+#portfolio .row:nth-of-type(2) > div:last-of-type > div {
   background-color: #4a0d66;
   color: #FFF;
 }
 
-#portfolio .row:nth-of-type(3) > div:last-of-type div {
+#portfolio .row:nth-of-type(2) > div:last-of-type > div > div {
+  background-color: #FFF;
+  color: #4a0d66;
+  margin: 0 -5px;
+  height: 300px;
+}
+
+#portfolio .row:nth-of-type(3) > div:last-of-type > div {
   background-color: #003086;
   color: #FFF;
+}
+
+#portfolio .row:nth-of-type(3) > div:last-of-type > div > div {
+  background-color: #FFF;
+  color: #003086;
+  margin: 0 -5px;
+  height: 300px;
 }
 
 #portfolio .row:first-of-type > div:first-of-type > div:first-of-type > div {
@@ -378,6 +419,20 @@ body {
   height: 175px;
 }
 
+#clients .top a {
+  text-align: center;
+}
+
+#clients .top svg {
+  font-size: 1.65rem;
+  margin-bottom: 0.5rem;
+  color: #c81d25ff;
+}
+
+#clients .top div {
+  color: #0b3954ff;
+}
+
 #footer {
   background: #0b3954ff;;
 }
@@ -394,6 +449,13 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  .navbar-nav .nav-link {
+    padding: 0.25rem 0.15rem;
+    border-bottom: 3px solid darkgoldenrod;
+    margin-right: 5rem;
+    font-size: 1.25rem!important;
+  }
+
   #banner .banner__block {
     flex-direction: column;
     height: auto;
@@ -486,7 +548,8 @@ body {
     margin-top: 1rem;
   }
   #portfolio .portfolio__block_description h2 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    margin: 1rem 0;
   }
   #portfolio .portfolio__block_description p {
     text-align: center;
@@ -497,6 +560,33 @@ body {
   }
   #portfolio .title h3 {
     margin: 10px auto;
+  }
+
+
+  #portfolio .portfolio__block_more_description {
+    height: 100%!important;
+  }
+
+  #portfolio .portfolio__block_more_description.one {
+    border-bottom: solid 10px #0057b8;
+  }
+
+  #portfolio .portfolio__block_more_description.two {
+    border-bottom: solid 10px #4a0d66;
+  }
+
+  #portfolio .portfolio__block_more_description.three {
+    border-bottom: solid 10px #003086;
+  }
+
+
+  #portfolio .row:first-of-type > div:last-of-type > div > div h4, #portfolio .row:nth-of-type(2) > div:last-of-type > div > div h4, #portfolio .row:nth-of-type(3) > div:last-of-type > div > div h4 {
+    margin-top: 1rem;
+  }
+  
+  #portfolio .row:first-of-type > div:last-of-type > div > div p, #portfolio .row:nth-of-type(2) > div:last-of-type > div > div p, #portfolio .row:nth-of-type(3) > div:last-of-type > div > div p {
+    margin: 25px 15px 1rem;
+    color: gray;
   }
 
   #clients .clients__container > div {

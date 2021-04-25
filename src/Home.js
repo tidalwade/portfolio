@@ -5,6 +5,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-scroll';
 import personalPic from './personal_pic.png';
 import ahalogo from './logo_aha.png';
 import alslogo from './logo_ALS.jpeg';
@@ -185,9 +186,11 @@ function Home(){
           </div>
           <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 col-12 portfolio__block_description d-flex flex-column justify-content-center">
-              <h1 className="text-center">Make-A-Wish Foundation</h1>
-              <h2 className="text-center">Donation form</h2>
-              <p>National and affiliate donation form with custom conditional content for each MAW chapter</p>
+              <h2 className="text-center">Make-A-Wish Foundation</h2>
+              <div className="portfolio__block_more_description one d-flex flex-column justify-content-center">
+                <h4 className="text-center">Donation Form</h4>
+                <p>National and affiliate donation form built with custom components allowing each chapter to create and maintain their own personal brand and needs</p>
+              </div>
             </div>
           </div>
         </div>
@@ -205,9 +208,11 @@ function Home(){
           </div>
           <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 col-12 portfolio__block_description d-flex flex-column justify-content-center">
-              <h1 className="text-center">Alzheimer's Association</h1>
-              <h2 className="text-center">Ride to End ALZ</h2>
-              <p>Event hub for registration, participant engagement, and donations</p>
+              <h2 className="text-center">Alzheimer's Association</h2>
+              <div className="portfolio__block_more_description two d-flex flex-column justify-content-center">
+                <h4 className="text-center">Ride to End ALZ</h4>
+                <p>ALZ's premiere peer to peer bike event site empowers riders to register, fundraise, share, and donate to support the organization</p>
+              </div>
             </div>
           </div>
         </div>
@@ -225,9 +230,11 @@ function Home(){
           </div>
           <div className="my-2 col-sm-5 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 col-12 portfolio__block_description d-flex flex-column justify-content-center">
-              <h1 className="text-center">Beyond Children's Hospital Trust</h1>
-              <h2 className="text-center">Beyond Boston</h2>
-              <p>Highlighting BCHT and asking for more money</p>
+              <h2 className="text-center">Beyond Children's Hospital Trust</h2>
+              <div className="portfolio__block_more_description three d-flex flex-column justify-content-center">
+                <h4 className="text-center">Beyond Boston</h4>
+                <p>Microsite tailored to inspire and inform potential philanthropist to give in support of research for Boston Children's Hospital Trust</p>
+              </div>
             </div>
           </div>
         </div>
@@ -305,12 +312,20 @@ function Home(){
             </div>
           </div>
         </div>
+        <div className="top d-flex justify-content-center align-items-center flex-column my-2">
+        <Link to="banner" spy={false} offset={-50} smooth={true} duration={2000} >
+        <FontAwesomeIcon icon="arrow-circle-up" />
+        <div>BACK TO TOP</div>
+        </Link>
+        </div>
       </section>
       <section id="footer">
         <div className="d-flex justify-content-center">
         © 2021 Ryan Wade. All rights reserved.
         </div>
       </section>
+
+      
 
       {/* <section className="py-3 container">
         <div className="row">
