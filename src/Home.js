@@ -166,7 +166,7 @@ function Home(){
                   <div className="summary__title">
                     <h1>Project Management</h1>
                     <h2>PMP Certified</h2>
-                    <p>My path in the tech arena began as a project manager. I've learend it's always possible to provide an achievable and realistic plan, while still being nimble, for each project milestone.</p>
+                    <p>My path in the tech arena began as a project manager. I've learned it's always possible to provide an achievable and realistic plan, while still being nimble, for each project milestone.</p>
                   </div>
                 </div>
               </div>
@@ -179,7 +179,7 @@ function Home(){
           <h3>Web Development Projects</h3>
         </div>
         <div className="col-md-10 col-12">
-        <div className="row">
+        <div className="row portfolio_container">
           <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 p-0 col-12 portfolio_block_container">
               <div className="portfolio__block">
@@ -201,7 +201,7 @@ function Home(){
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row portfolio_container">
           <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 p-0 col-12 portfolio_block_container" >
               <div className="portfolio__block">
@@ -223,7 +223,7 @@ function Home(){
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row portfolio_container">
           <div className="my-2 col-sm-7 col-xs-12 fade" data-delay=".25s">
             <div className="my-2 p-0 col-12 portfolio_block_container">
             <div className="portfolio__block">
